@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Felix Lazo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/550ddecd5b.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-light container-fluid">
+          <span class="navbar-brand">Felix Lazo</span>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon fas fa-chevron-circle-down rotate-if-collapsed"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a id="projects-link" class="nav-link" aria-current="page" href="#">PROJECTS</a>
+              </li>
+              <li class="nav-item">
+                <a id="about-link" class="nav-link" href="about.html">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a id="contact-link" class="nav-link" href="contact.html">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+      </nav>
+    </header>
+    <section class="projects container fade">
+      <div class="row">
+        <article class="col-xl-6 project atm-sim">
+            <div class="preview">
+                <div class="wrap">
+                  <div class="app-display">
+                    <picture>
+                      <img src="images/atm-sim_954x582.png" alt="ATM Simulator">
+                    </picture>
+                  </div>
+                  <div class="project-links">
+                    <div class="button">
+                      <a href="#">Demo <i class="far fa-window-maximize"></i></a>
+                    </div>
+                    <div class="button">
+                      <a href="#">Code <i class="fas fa-code"></i></a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="description">
+              <h3>ATM Simulator</h3>
+              <p>
+                A Java web app that simulates an ATM. Allows users to login with their account and pin numbers.
+                If they don’t have a bank account, they can register for one. Once logged in, users can update their bank balances (checking/saving) and account settings.
+                Includes client-side and server-side validation.
+              </p>
+              <div class="tech-used">
+                <strong>Backend</strong>: <div class="tech">Java, Maven, Spring MVC, Spring Security, Hibernate, AWS Elastic Beanstalk, AWS RDS (MySQL engine)</div>
+              </div>
+              <div class="tech-used">
+                <strong>Frontend</strong>: <div class="tech">JSP, JSTL, CSS3, JavaScript, Bootstrap 5</div>
+              </div>
+            </div>
+        </article>
+        <article class="col-xl-6 project guessing-game">
+          <div class="preview">
+            <div class="wrap">
+              <div class="app-display">
+                <picture>
+                  <img src="images/animal-guessing-game_954x582.png" alt="Animal Guessing Game">
+                </picture>
+              </div>
+              <div class="project-links">
+                <div class="button">
+                  <a href="#">Demo <i class="far fa-window-maximize"></i></a>
+                </div>
+                <div class="button">
+                  <a href="#">Code <i class="fas fa-code"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="description">
+            <h3>Animal Guessing Game</h3>
+            <p>
+              A game that tries to guess what animal the user is thinking of by asking the user a series of questions.
+              A Binary Decision Tree is used to guide the game to the right answer.
+            </p>
+            <div class="tech-used">
+              <strong>Backend</strong>: <div class="tech">Java, Maven, Java Servlets</div>
+            </div>
+            <div class="tech-used">
+              <strong>Frontend</strong>: <div class="tech">JSP, JSTL, CSS3, JavaScript</div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="row">
+        <article class="col-xl-6 project employee-database">
+          <div class="preview">
+            <div class="wrap">
+              <div class="app-display">
+                <picture>
+                  <img src="images/employee-database_954x582.png" alt="Employee Database">
+                </picture>
+              </div>
+              <div class="project-links">
+                <div class="button">
+                  <a href="#">Demo <i class="far fa-window-maximize"></i></a>
+                </div>
+                <div class="button">
+                  <a href="#">Code <i class="fas fa-code"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="description">
+            <h3>Employee Database</h3>
+            <p>
+              A database management system where the user can manage an employee’s information.
+              Allows users to create, update, search, sort, and delete employee information in a AWS Relational Database.
+            </p>
+            <div class="tech-used">
+              <strong>Backend</strong>: <div class="tech">Java, Maven, Java Servlets, AWS RDS (MySQL engine)</div>
+            </div>
+            <div class="tech-used">
+              <strong>Frontend</strong>: <div class="tech">JSP, JSTL, CSS3, JavaScript</div>
+            </div>
+          </div>
+        </article>
+        <article class="col-xl-6 project dead-space">
+          <div class="preview">
+            <div class="wrap">
+              <div class="app-display">
+                <picture>
+                  <img src="images/dead-space_954x582.png" alt="Dead Space">
+                </picture>
+              </div>
+              <div class="project-links">
+                <div class="button">
+                  <a href="#">Demo <i class="far fa-window-maximize"></i></a>
+                </div>
+                <div class="button">
+                  <a href="#">Code <i class="fas fa-code"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="description">
+            <h3>Dead Space Webpage</h3>
+            <p>
+              A replicate webpage of EA's <em>Dead Space</em> website.
+            </p>
+            <div class="tech-used">
+              <strong>Frontend</strong>: <div class="tech">HTML5, CSS3, JavaScript, Bootstrap 5</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <footer>
+      <div class="disclaimer">
+        These web applications are not secured by SSL certificates.
+      </div>
+    </footer>
+  </body>
+</html>
