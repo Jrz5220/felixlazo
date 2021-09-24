@@ -17,6 +17,9 @@ a {
   border-bottom: 2px solid #54cfff;
   padding: 3.5rem 2rem;
 }
+.navbar-light .navbar-brand {
+  color: #1B1464;
+}
 .navbar-brand {
   /* Bootstrap fonts for navbar-brand */
   font-family: "Segoe UI","Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
@@ -29,6 +32,10 @@ a {
   font-size: 1.2rem;
   position: relative;
   margin: 0 1.5rem;
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+  color: #0652DD;
 }
 .nav-link::before {
   content: '';
