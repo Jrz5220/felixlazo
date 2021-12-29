@@ -1,0 +1,51 @@
+.contacts {
+  padding: 3.5rem 0;
+}
+.email-contact {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.contact-header {
+  color: #1B1464;
+  font-family: 'Comfortaa', 'Montserrat', sans-serif;
+  font-weight: bold;
+  padding: 1rem 0;
+  text-align: center;
+}
+.contact-form label {
+  display: block;
+  margin: 1rem 0;
+}
+.field-name {
+  color: #0652DD;
+  display: inline-block;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+.form-field {
+  background-color: #f0f0f0;
+  border-style: none;
+  border-radius: 1.75rem;
+  color: #4a4a4a;
+  display: block;
+  padding: 5px 10px;
+  width: 100%;
+}
+.form-field:focus {
+  box-shadow: 0px 0px 2px #000;
+  outline: none;
+}
+label.textarea {
+  margin-bottom: 1.5rem;
+}
+.message-field {
+  resize: vertical;
+}
+.submit-btn {
+  display: inline-block;
+  width: 90px;
+}
+.error-message {
+  color: red;
+  display: none;
+}
