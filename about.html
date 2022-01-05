@@ -14,12 +14,14 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
     <link rel="manifest" href="images/favicon/site.webmanifest">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/about.css">
+    <script defer src="js/main.js" charset="utf-8"></script>
   </head>
   <body>
     <header>
       <nav class="navbar navbar-expand-md navbar-light container-fluid">
-          <span class="navbar-brand">Felix Lazo</span>
+          <h1 class="navbar-brand">Felix Lazo</h1>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon fas fa-chevron-circle-down rotate-if-collapsed"></span>
           </button>
@@ -38,16 +40,258 @@
           </div>
       </nav>
     </header>
-    <section id="about" class="container fade about-me">
-      <div class="text-slot">
-        <p>
-          I am a software developer who is passionate about building functional and creative applications.
-          I have experience using several front-end and back-end web technologies.
-          Whether I'm creating responsive UI designs, configuring security for a webapp, or implementing efficient data structures, I enjoy contributing to the different processes of developing a program.
-        </p>
-        <p>
-          You can check some of my other work on <strong><a class="github-link" href="https://github.com/Jrz5220?tab=repositories" target="_blank">Github</a></strong>.
-        </p>
+
+    <section id="about" class="container fade">
+      <article class="about-me">
+        <header class="main-content-header">
+          <span class="line-through"></span>
+          <h2>About Me</h2>
+        </header>
+        <div class="text-slot">
+          <p>
+            I am a software developer who spends most of my time learning how to build functional and creative web applications using different front-end and back-end technologies.
+            Some of my experiences includes creating responsive UI designs, providing security for a web app, and implementing effiecient data structures.
+          </p>
+          <p>
+            You can check some of my other work on <strong><a class="github-link" href="https://github.com/Jrz5220?tab=repositories" target="_blank">Github</a></strong>.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <section class="skills fade">
+      <header class="main-content-header">
+        <span class="line-through"></span>
+        <h2>Skills</h2>
+      </header>
+      <div class="container all-skills-container">
+        <div class="row gx-5 gy-5 row-of-skills">
+          <article class="col-md-6 col-lg-4">      <!-- padding sets the gutters -->
+            <div class="skill-card">                                    <!-- card -->
+              <section class="skill-card-face skill-card-front">                   <!-- front -->
+                <div class="card-content">
+                  <picture>
+                    <img src="images/skills/html-5.png" alt="HTML5">
+                  </picture>
+                  <h3>HTML5</h3>
+                  <p>
+                    HTML5 is supported by all major browsers and works with many server-side technologies, as well as being backwards compatible for older browsers.
+                    It also provides tools to navigate an HTML5 document for people using assistive technologies.
+                  </p>
+                </div>
+              </section>
+              <section class="skill-card-face skill-card-back">                    <!-- back -->
+                <div class="card-content">
+                  <section class="skill-related-content">
+                    <h4><span>HTML5</span> Code</h4>
+                    <ul class="card-links-list">
+                      <li><a href="https://github.com/Jrz5220/dead-space-page-demo/blob/main/index.html" target="_blank"><i class="fas fa-external-link-alt"></i>Dead Space Webpage</a></li>
+                      <li><a href="https://github.com/Jrz5220/cape-cod-road-map-spring-mvc/blob/main/src/main/webapp/WEB-INF/view/index.jsp" target="_blank"><i class="fas fa-external-link-alt"></i>Cape Cod Road Map</a></li>
+                    </ul>
+                  </section>
+                  <section class="skill-related-content">
+                    <h4>Related Content</h4>
+                    <ul class="card-links-list">
+                      <li><a href="https://www.w3.org/TR/wai-aria-practices-1.2/" target="_blank"><i class="fas fa-external-link-alt"></i>HTML ARIA attributes</a></li>
+                      <li><a href="https://html.spec.whatwg.org/" target="_blank"><i class="fas fa-external-link-alt"></i>HTML specification</a></li>
+                    </ul>
+                  </section>
+                </div>
+              </section>
+              <button type="button" class="flip-card-btn" name="button" value="Flip Card">            <!-- button -->
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </article>
+          <article class="col-md-6 col-lg-4">
+            <div class="skill-card">
+              <section class="skill-card-face skill-card-front">
+                <div class="card-content">
+                  <picture>
+                    <img src="images/skills/css.png" alt="CSS3">
+                  </picture>
+                  <h3>CSS3</h3>
+                  <p>
+                    CSS3 turns static HTML5 documents into responsive, user-friendly webpages that work on mulitple platforms.
+                    My HTML5 documents link to CSS3 files to incorporate flexible layouts designed with grid, flexbox, and positioned elements.
+                  </p>
+                </div>
+              </section>
+              <section class="skill-card-face skill-card-back">
+                <div class="card-content">
+                  <section class="skill-related-content">
+                    <h4><span>CSS3</span> Code</h4>
+                    <ul class="card-links-list">
+                      <li><a href="https://github.com/Jrz5220/cape-cod-road-map-spring-mvc/blob/main/src/main/webapp/css/styles.css" target="_blank"><i class="fas fa-external-link-alt"></i>Cape Cod Road Map</a></li>
+                      <li><a href="https://github.com/Jrz5220/duel-links-replays/blob/main/public/css/styles.css" target="_blank"><i class="fas fa-external-link-alt"></i>Yu-Gi-Oh Webpage</a></li>
+                    </ul>
+                  </section>
+                  <section class="skill-related-content">
+                    <h4>Related Content</h4>
+                    <ul class="card-links-list">
+                      <li><a href="https://css-tricks.com/is-vendor-prefixing-dead/" target="_blank"><i class="fas fa-external-link-alt"></i>Is Vendor Prefixing Dead?</a></li>
+                      <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference"><i class="fas fa-external-link-alt"></i>CSS Reference Guide</a></li>
+                    </ul>
+                  </section>
+                </div>
+              </section>
+              <button type="button" class="flip-card-btn" name="button" value="Flip Card">
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </article>
+          <article class="col-md-6 col-lg-4">
+            <div class="skill-card">
+              <section class="skill-card-face skill-card-front">
+                <div class="card-content">
+                  <picture>
+                    <img src="images/skills/javascript.png" alt="JavaScript">
+                  </picture>
+                  <h3>JavaScript</h3>
+                  <p>
+                    JavaScript is a client-side scripting language that can manipulate objects in the Document Object Model.
+                    This makes JavaScript very useful in many areas of web development, but I often use it to validate user input.
+                    It's also secure, since it only runs inside the browser.
+                  </p>
+                </div>
+              </section>
+              <section class="skill-card-face skill-card-back">
+                <div class="card-content">
+                  <section class="skill-related-content">
+                    <h4><span>JS</span> Code</h4>
+                    <ul class="card-links-list">
+                      <li><a href="https://github.com/Jrz5220/atm-simulator/blob/main/src/main/webapp/js/main.js" target="_blank"><i class="fas fa-external-link-alt"></i>User Input Validation</a></li>
+                      <li><a href="https://github.com/Jrz5220/cape-cod-road-map-spring-mvc/blob/main/src/main/webapp/js/main.js" target="_blank"><i class="fas fa-external-link-alt"></i>Navbar Functions</a></li>
+                    </ul>
+                  </section>
+                  <section class="skill-related-content">
+                    <h4>Related Content</h4>
+                    <ul class="card-links-list">
+                      <li><a href="https://www.greycampus.com/blog/programming/java-script-versions" target="_blank"><i class="fas fa-external-link-alt"></i>JavaScript Versions</a></li>
+                      <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing" target="_blank"><i class="fas fa-external-link-alt"></i>Asynchronous JavaScript</a></li>
+                    </ul>
+                  </section>
+                </div>
+              </section>
+              <button type="button" class="flip-card-btn" name="button" value="Flip Card">
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </article>
+          <article class="col-md-6 col-lg-4">
+            <div class="skill-card">
+              <section class="skill-card-face skill-card-front">
+                <div class="card-content">
+                  <picture>
+                    <img src="images/skills/nodejs.png" alt="Node.js">
+                  </picture>
+                  <h3>Node.js</h3>
+                  <p>
+                    Node.js is a JavaScript runtime environment that can run JavaScript outside the broswer.
+                    It includes a standard library of APIs as well as a package manager called npm that imports external libraries.
+                    With Node.js, JavaScript can run on servers to create full functioning applications.
+                  </p>
+                </div>
+              </section>
+              <section class="skill-card-face skill-card-back">
+                <div class="card-content">
+                  <section class="skill-related-content">
+                    <h4><span>Node.js</span> Code</h4>
+                    <ul class="card-links-list">
+                      <li><a href="https://github.com/Jrz5220/duel-links-replays/blob/main/app.js" target="_blank"><i class="fas fa-external-link-alt"></i>Yu-Gi-Oh Node App</a></li>
+                    </ul>
+                  </section>
+                  <section class="skill-related-content">
+                    <h4>Related Content</h4>
+                    <ul class="card-links-list">
+                      <li><a href="https://nodejs.org/en/knowledge/errors/what-are-the-error-conventions/" target="_blank"><i class="fas fa-external-link-alt"></i>Error Conventions</a></li>
+                      <li><a href="https://www.cloudbees.com/blog/node-js-security-tips" target="_blank"><i class="fas fa-external-link-alt"></i>Node.js Security Tips</a></li>
+                    </ul>
+                  </section>
+                </div>
+              </section>
+              <button type="button" class="flip-card-btn" name="button" value="Flip Card">
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </article>
+          <article class="col-md-6 col-lg-4">
+            <div class="skill-card">
+              <section class="skill-card-face skill-card-front">
+                <div class="card-content">
+                  <picture>
+                    <img src="images/skills/java.png" alt="Java">
+                  </picture>
+                  <h3>Java</h3>
+                  <p>
+                    Java is the most used programming language in the world.
+                    Its JVM allows Java to execute on many different platforms.
+                    This portability makes it useful in many areas of software development, including in mobile apps, embeded systems, and web development.
+                  </p>
+                </div>
+              </section>
+              <section class="skill-card-face skill-card-back">
+                <div class="card-content">
+                  <section class="skill-related-content">
+                    <h4><span>Java</span> Code</h4>
+                    <ul class="card-links-list">
+                      <li><a href="https://github.com/Jrz5220/atm-simulator/tree/main/src/main/java/com/felix/atmSim" target="_blank"><i class="fas fa-external-link-alt"></i>ATM App</a></li>
+                      <li><a href="https://github.com/Jrz5220/doubly-circular-linked-list" target="_blank"><i class="fas fa-external-link-alt"></i>Doubly Circular Linked List</a></li>
+                    </ul>
+                  </section>
+                  <section class="skill-related-content">
+                    <h4>Related Content</h4>
+                    <ul class="card-links-list">
+                      <li><a href="https://medium.com/@ilyailin7777/all-dependency-injection-types-spring-336da7baf51b" target="_blank"><i class="fas fa-external-link-alt"></i>Dependency Injection</a></li>
+                      <li><a href="http://www.angelikalanger.com/GenericsFAQ/FAQSections/TechnicalDetails.html#FAQ001" target="_blank"><i class="fas fa-external-link-alt"></i>Unchecked Warnings</a></li>
+                    </ul>
+                  </section>
+                </div>
+              </section>
+              <button type="button" class="flip-card-btn" name="button" value="Flip Card">
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </article>
+          <article class="col-md-6 col-lg-4">
+            <div class="skill-card">
+              <section class="skill-card-face skill-card-front">
+                <div class="card-content">
+                  <picture>
+                    <img src="images/skills/mysql.png" alt="MySQL">
+                  </picture>
+                  <h3>MySQL</h3>
+                  <p>
+                    I use MySQL because it's the world's most popular database management system, which means that it's highly supported.
+                    It's also open source software, making it great for learning about RDBMS.
+                    MySQL offers premium services for more experienced developers.
+                  </p>
+                </div>
+              </section>
+              <section class="skill-card-face skill-card-back">
+                <div class="card-content">
+                  <section class="skill-related-content">
+                    <h4><span>MySQL</span> Code</h4>
+                    <ul class="card-links-list">
+                      <li><a href="https://github.com/Jrz5220/atm-simulator/blob/main/src/main/java/com/felix/atmSim/dao/UserDaoImpl.java" target="_blank"><i class="fas fa-external-link-alt"></i>ATM Database</a></li>
+                      <li><a href="https://github.com/Jrz5220/my-employee-database-maven/blob/main/src/main/java/com/felix/MyEmployeeDatabase/EmployeeDbUtil.java" target="_blank"><i class="fas fa-external-link-alt"></i>Employee Database</a></li>
+                    </ul>
+                  </section>
+                  <section class="skill-related-content">
+                    <h4>Related Content</h4>
+                    <ul class="card-links-list">
+                      <li><a href="https://www.mysqltutorial.org/" target="_blank"><i class="fas fa-external-link-alt"></i>MySQL Tutorial</a></li>
+                      <li><a href="https://dev.mysql.com/doc/refman/8.0/en/data-types.html" target="_blank"><i class="fas fa-external-link-alt"></i>MySQL Data Types</a></li>
+                    </ul>
+                  </section>
+                </div>
+              </section>
+              <button type="button" class="flip-card-btn" name="button" value="Flip Card">
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
   </body>

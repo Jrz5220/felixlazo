@@ -14,12 +14,13 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
     <link rel="manifest" href="images/favicon/site.webmanifest">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/projects.css">
   </head>
   <body>
     <header>
       <nav class="navbar navbar-expand-md navbar-light container-fluid">
-          <span class="navbar-brand">Felix Lazo</span>
+          <h1 class="navbar-brand">Felix Lazo</h1>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon fas fa-chevron-circle-down rotate-if-collapsed"></span>
           </button>
@@ -38,139 +39,145 @@
           </div>
       </nav>
     </header>
-    <section class="projects container fade">
-      <div class="row">
-        <article class="col-xl-6 project atm-sim">
-            <div class="preview">
-                <div class="wrap">
-                  <div class="app-display">
-                    <picture>
-                      <img src="images/atm-sim_954x582.png" alt="ATM Simulator">
-                    </picture>
+
+    <section class="projects fade">
+      <header class="main-content-header">
+        <span class="line-through"></span>
+        <h2>Projects</h2>
+      </header>
+      <div class="projects-container container">
+        <div class="row">
+          <article class="col-xl-6 project atm-sim">
+              <div class="preview">
+                  <div class="wrap">
+                    <div class="app-screenshot">
+                      <picture>
+                        <img src="images/atm-sim_954x582.png" alt="ATM Simulator">
+                      </picture>
+                    </div>
+                    <div class="project-links">
+                      <div class="project-link-container">
+                        <a href="http://atm-env.eba-pnn2c2cg.us-east-1.elasticbeanstalk.com/loginPage">Demo <i class="far fa-window-maximize"></i></a>
+                      </div>
+                      <div class="project-link-container">
+                        <a href="https://github.com/Jrz5220/atm-simulator">Code <i class="fas fa-code"></i></a>
+                      </div>
+                    </div>
                   </div>
-                  <div class="project-links">
-                    <div class="button">
-                      <a href="http://atm-env.eba-pnn2c2cg.us-east-1.elasticbeanstalk.com/loginPage">Demo <i class="far fa-window-maximize"></i></a>
-                    </div>
-                    <div class="button">
-                      <a href="https://github.com/Jrz5220/atm-simulator">Code <i class="fas fa-code"></i></a>
-                    </div>
+              </div>
+              <div class="description">
+                <h3>ATM Simulator</h3>
+                <p>
+                  A Java web app that simulates an ATM. Allows users to login with their account and pin numbers.
+                  If they don’t have a bank account, they can register for one. Once logged in, users can update their bank balances (checking/saving) and account settings.
+                  Includes client-side and server-side validation.
+                </p>
+                <div class="tech-used">
+                  <strong>Backend</strong>: <div class="tech">Java, Maven, Spring MVC, Spring Security, Hibernate, AWS Elastic Beanstalk, AWS RDS (MySQL engine)</div>
+                </div>
+                <div class="tech-used">
+                  <strong>Frontend</strong>: <div class="tech">JSP, JSTL, CSS3, JavaScript, Bootstrap 5</div>
+                </div>
+              </div>
+          </article>
+          <article class="col-xl-6 project guessing-game">
+            <div class="preview">
+              <div class="wrap">
+                <div class="app-screenshot">
+                  <picture>
+                    <img src="images/animal-guessing-game_954x582.png" alt="Animal Guessing Game">
+                  </picture>
+                </div>
+                <div class="project-links">
+                  <div class="project-link-container">
+                    <a href="https://animal-guessing-game.herokuapp.com/">Demo <i class="far fa-window-maximize"></i></a>
+                  </div>
+                  <div class="project-link-container">
+                    <a href="https://github.com/Jrz5220/animal-guessing-game">Code <i class="fas fa-code"></i></a>
                   </div>
                 </div>
+              </div>
             </div>
             <div class="description">
-              <h3>ATM Simulator</h3>
+              <h3>Animal Guessing Game</h3>
               <p>
-                A Java web app that simulates an ATM. Allows users to login with their account and pin numbers.
-                If they don’t have a bank account, they can register for one. Once logged in, users can update their bank balances (checking/saving) and account settings.
-                Includes client-side and server-side validation.
-                <br>
-                Account Login: account - 2967, pin - 1111
+                A game that tries to guess what animal the user is thinking of by asking the user a series of questions.
+                A Binary Decision Tree is used to guide the game to the right answer.
               </p>
               <div class="tech-used">
-                <strong>Backend</strong>: <div class="tech">Java, Maven, Spring MVC, Spring Security, Hibernate, AWS Elastic Beanstalk, AWS RDS (MySQL engine)</div>
+                <strong>Backend</strong>: <div class="tech">Java, Maven, Java Servlets</div>
               </div>
               <div class="tech-used">
-                <strong>Frontend</strong>: <div class="tech">JSP, JSTL, CSS3, JavaScript, Bootstrap 5</div>
+                <strong>Frontend</strong>: <div class="tech">JSP, JSTL, CSS3, JavaScript</div>
               </div>
             </div>
-        </article>
-        <article class="col-xl-6 project guessing-game">
-          <div class="preview">
-            <div class="wrap">
-              <div class="app-display">
-                <picture>
-                  <img src="images/animal-guessing-game_954x582.png" alt="Animal Guessing Game">
-                </picture>
-              </div>
-              <div class="project-links">
-                <div class="button">
-                  <a href="https://animal-guessing-game.herokuapp.com/">Demo <i class="far fa-window-maximize"></i></a>
+          </article>
+        </div>
+        <div class="row">
+          <article class="col-xl-6 project employee-database">
+            <div class="preview">
+              <div class="wrap">
+                <div class="app-screenshot">
+                  <picture>
+                    <img src="images/employee-database_954x582.png" alt="Employee Database">
+                  </picture>
                 </div>
-                <div class="button">
-                  <a href="https://github.com/Jrz5220/animal-guessing-game">Code <i class="fas fa-code"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="description">
-            <h3>Animal Guessing Game</h3>
-            <p>
-              A game that tries to guess what animal the user is thinking of by asking the user a series of questions.
-              A Binary Decision Tree is used to guide the game to a correct answer.
-            </p>
-            <div class="tech-used">
-              <strong>Backend</strong>: <div class="tech">Java, Maven, Java Servlets</div>
-            </div>
-            <div class="tech-used">
-              <strong>Frontend</strong>: <div class="tech">JSP, JSTL, CSS3, JavaScript</div>
-            </div>
-          </div>
-        </article>
-      </div>
-      <div class="row">
-        <article class="col-xl-6 project employee-database">
-          <div class="preview">
-            <div class="wrap">
-              <div class="app-display">
-                <picture>
-                  <img src="images/employee-database_954x582.png" alt="Employee Database">
-                </picture>
-              </div>
-              <div class="project-links">
-                <div class="button">
-                  <a href="https://my-employee-database.herokuapp.com/">Demo <i class="far fa-window-maximize"></i></a>
-                </div>
-                <div class="button">
-                  <a href="https://github.com/Jrz5220/my-employee-database-maven">Code <i class="fas fa-code"></i></a>
+                <div class="project-links">
+                  <div class="project-link-container">
+                    <a href="https://my-employee-database.herokuapp.com/">Demo <i class="far fa-window-maximize"></i></a>
+                  </div>
+                  <div class="project-link-container">
+                    <a href="https://github.com/Jrz5220/my-employee-database-maven">Code <i class="fas fa-code"></i></a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="description">
-            <h3>Employee Management System</h3>
-            <p>
-              A database management system where the user can manage an employee’s information.
-              Allows users to create, update, search, sort, and delete employee information in a AWS Relational Database.
-            </p>
-            <div class="tech-used">
-              <strong>Backend</strong>: <div class="tech">Java, Maven, Java Servlets, AWS RDS (MySQL engine)</div>
-            </div>
-            <div class="tech-used">
-              <strong>Frontend</strong>: <div class="tech">JSP, JSTL, CSS3</div>
-            </div>
-          </div>
-        </article>
-        <article class="col-xl-6 project dead-space">
-          <div class="preview">
-            <div class="wrap">
-              <div class="app-display">
-                <picture>
-                  <img src="images/dead-space_954x582.png" alt="Dead Space">
-                </picture>
+            <div class="description">
+              <h3>Employee Database</h3>
+              <p>
+                A database management system where the user can manage an employee’s information.
+                Allows users to create, update, search, sort, and delete employee information in a AWS Relational Database.
+              </p>
+              <div class="tech-used">
+                <strong>Backend</strong>: <div class="tech">Java, Maven, Java Servlets, AWS RDS (MySQL engine)</div>
               </div>
-              <div class="project-links">
-                <div class="button">
-                  <a href="https://jrz5220.github.io/dead-space-page-demo/">Demo <i class="far fa-window-maximize"></i></a>
-                </div>
-                <div class="button">
-                  <a href="https://github.com/Jrz5220/dead-space-page-demo">Code <i class="fas fa-code"></i></a>
-                </div>
+              <div class="tech-used">
+                <strong>Frontend</strong>: <div class="tech">JSP, JSTL, CSS3, JavaScript</div>
               </div>
             </div>
-          </div>
-          <div class="description">
-            <h3>Dead Space Webpage</h3>
-            <p>
-              A replicate webpage of EA's <em>Dead Space</em> website.
-            </p>
-            <div class="tech-used">
-              <strong>Frontend</strong>: <div class="tech">HTML5, CSS3, JavaScript, Bootstrap 5</div>
+          </article>
+          <article class="col-xl-6 project dead-space">
+            <div class="preview">
+              <div class="wrap">
+                <div class="app-screenshot">
+                  <picture>
+                    <img src="images/dead-space_954x582.png" alt="Dead Space">
+                  </picture>
+                </div>
+                <div class="project-links">
+                  <div class="project-link-container">
+                    <a href="https://jrz5220.github.io/dead-space-page-demo/">Demo <i class="far fa-window-maximize"></i></a>
+                  </div>
+                  <div class="project-link-container">
+                    <a href="https://github.com/Jrz5220/dead-space-page-demo">Code <i class="fas fa-code"></i></a>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </article>
+            <div class="description">
+              <h3>Dead Space Webpage</h3>
+              <p>
+                A replicate webpage of EA's <em>Dead Space</em> website.
+              </p>
+              <div class="tech-used">
+                <strong>Frontend</strong>: <div class="tech">HTML5, CSS3, JavaScript, Bootstrap 5</div>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
+
     <footer>
       <div class="disclaimer">
         These web applications are not secured by SSL certificates.

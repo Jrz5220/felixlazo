@@ -14,13 +14,14 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
     <link rel="manifest" href="images/favicon/site.webmanifest">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contact.css">
     <script defer src="js/main.js" charset="utf-8"></script>
   </head>
   <body>
     <header>
       <nav class="navbar navbar-expand-md navbar-light container-fluid">
-          <span class="navbar-brand">Felix Lazo</span>
+          <h1 class="navbar-brand">Felix Lazo</h1>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon fas fa-chevron-circle-down rotate-if-collapsed"></span>
           </button>
@@ -39,10 +40,10 @@
           </div>
       </nav>
     </header>
-    <section id="contact" class="contacts fade">
-      <div class="container">
-        <div class="email-me">
-          <h3 class="contact-header">Email Me</h3>
+
+    <section id="contact" class="container contacts fade">
+        <div class="email-contact">
+          <h2 class="contact-header">Email Me</h2>
             <form id="email-me-form" class="contact-form" action="https://formspree.io/f/mayavodr" method="post">
               <label class="input-container">
                 <span class="field-name">Name</span>
@@ -71,7 +72,6 @@
               <input type="submit" class="btn btn-primary submit-btn" name="submit" value="Send">
             </form>
         </div>
-      </div>
     </section>
   </body>
 </html>

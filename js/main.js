@@ -1,4 +1,6 @@
-const contactForm = document.getElementById("email-me-form");
+const contactForm = document.getElementById('email-me-form');
+const skillCards = document.getElementsByClassName('skill-card');
+const flipButtons = document.getElementsByClassName('flip-card-btn');
 
 function validateEmail(event) {
   let re = /\S+@\S+\.\S+/;
@@ -11,4 +13,14 @@ function validateEmail(event) {
   }
 }
 
-contactForm.addEventListener("submit", validateEmail);
+if(contactForm !== null) {
+  contactForm.addEventListener("submit", validateEmail);
+}
+
+for(var i = 0; i < flipButtons.length; i++) {
+  let button = flipButtons[i];
+  let card = skillCards[i];
+  button.addEventListener('click', () => {
+    card.classList.toggle('is-flipped');
+  });
+}
