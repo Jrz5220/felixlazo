@@ -146,17 +146,17 @@
               </div>
             </div>
           </article>
-          <article class="col-xl-6 project dead-space">
+          <article class="col-xl-6 project duel-links">
             <div class="preview">
               <div class="wrap">
                 <div class="app-screenshot">
                   <picture>
-                    <img src="images/dead-space_954x582.png" alt="Dead Space">
+                    <img src="images/duel-links-replays_954x582.jpg" alt="Yu-Gi-Oh! Duel Links">
                   </picture>
                 </div>
                 <div class="project-links">
                   <div class="project-link-container">
-                    <a href="https://jrz5220.github.io/dead-space-page-demo/">Demo <i class="far fa-window-maximize"></i></a>
+                    <a href="https://lit-sea-39239.herokuapp.com/">Demo <i class="far fa-window-maximize"></i></a>
                   </div>
                   <div class="project-link-container">
                     <a href="https://github.com/Jrz5220/dead-space-page-demo">Code <i class="fas fa-code"></i></a>
@@ -165,12 +165,17 @@
               </div>
             </div>
             <div class="description">
-              <h3>Dead Space Webpage</h3>
+              <h3>Yu-Gi-Oh Duel Links!</h3>
               <p>
-                A replicate webpage of EA's <em>Dead Space</em> website.
+                An Express.js application that displays gameplay videos of Yu-Gi-Oh Duel Links.
+                When the user selects a video, the page is loaded with corresponding data from a mongo database and rendered with EJS.
+                The mp4 videos are retrieved from an AWS S3 bucket and presented using the videojs framework.
               </p>
               <div class="tech-used">
-                <strong>Frontend</strong>: <div class="tech">HTML5, CSS3, JavaScript, Bootstrap 5</div>
+                <strong>Backend</strong>: <div class="tech">Node.js, Express.js, Mongoose, MongoDB Atlas, JavaScript, AWS S3</div>
+              </div>
+              <div class="tech-used">
+                <strong>Frontend</strong>: <div class="tech">HTML5, CSS3, JavaScript, jQuery, EJS, Bootstrap 5, videojs </div>
               </div>
             </div>
           </article>
@@ -180,7 +185,7 @@
 
     <footer>
       <div class="disclaimer">
-        These web applications are not secured by SSL certificates.
+        These web applications are not secured by TSL/SSL certificates.
       </div>
     </footer>
   </body>
